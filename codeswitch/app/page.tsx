@@ -299,11 +299,12 @@ export default function STEMLearningLanding() {
               </div>
               <div className="flex items-center justify-center">
                 <Image
-                  alt="Custom learning tools and hands-on projects"
+                  alt="Student working on robotics project"
                   className="mx-auto aspect-video overflow-hidden rounded-xl object-cover shadow-lg"
                   height="400"
-                  src="/placeholder.svg?height=400&width=550"
+                  src="/assests/asian-teenager-doing-robot-project-600nw-2196504387.webp"
                   width="550"
+                  priority
                 />
               </div>
             </div>
