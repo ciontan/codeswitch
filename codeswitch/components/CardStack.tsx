@@ -12,7 +12,7 @@ const cards: CardProps[] = [
     color: "bg-yellow-500",
     sub: "All Engineering",
     content:
-      "Beyond programming - explore mechanical, electrical, civil, and more",
+      "Beyond programming - explore mechanical, electrical, civil",
   },
   {
     color: "bg-green-500",
@@ -38,24 +38,13 @@ const cards: CardProps[] = [
   {
     color: "bg-teal-500",
     sub: "All-Rounder",
-    content: "Maximum exposure to help identify your child's true talents",
+    content: "Maximum exposure to help identify true talents",
   },
 ];
 
 export default function CardStack() {
   const containerRef = useRef<HTMLDivElement>(null);
-  const [activeIndex, setActiveIndex] = useState(() => {
-    if (typeof window === "undefined") return -3;
-    const viewHeight = window.innerHeight;
-    const scrollTop = window.scrollY;
-    const scrollHeight = document.documentElement.scrollHeight;
-    const progress = Math.max(
-      0,
-      Math.min(1, scrollTop / (scrollHeight - viewHeight))
-    );
-    const cardIndex = Math.floor(progress * cards.length);
-    return Math.max(-1, Math.min(cardIndex, cards.length - 1));
-  });
+  const [activeIndex, setActiveIndex] = useState(-1);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -63,14 +52,16 @@ export default function CardStack() {
 
       const rect = containerRef.current.getBoundingClientRect();
       const viewHeight = window.innerHeight;
-      const elementTop = rect.top;
-      const elementHeight = rect.height;
+
+      // Calculate how much of the container has been scrolled through
       const scrollProgress = Math.max(
         0,
-        Math.min(1, (viewHeight - elementTop) / (elementHeight - viewHeight))
+        Math.min(1, -rect.top / (rect.height - viewHeight))
       );
 
-      const cardIndex = Math.floor(scrollProgress * cards.length);
+      // Map scroll progress to card indices
+      // We want to show cards progressively as we scroll
+      const cardIndex = Math.floor(scrollProgress * (cards.length + 1)) - 1;
       const clampedIndex = Math.max(-1, Math.min(cardIndex, cards.length - 1));
 
       setActiveIndex(clampedIndex);

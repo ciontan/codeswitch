@@ -206,8 +206,8 @@ export default function STEMLearningLanding() {
                   Limited School Curriculum
                 </div>
                 <p className="text-red-600 dark:text-red-400">
-                  Schools don't cater to early STEM education, leaving a gap in
-                  your child's learning journey during crucial developmental
+                  Schools don&apos;t cater to early STEM education, leaving a gap in
+                  your child&apos;s learning journey during crucial developmental
                   years.
                 </p>
               </div>
@@ -218,7 +218,7 @@ export default function STEMLearningLanding() {
                 </div>
                 <p className="text-red-600 dark:text-red-400">
                   Existing tuition centers use outdated pen-and-paper methods
-                  that don't address different learning styles, causing children
+                  that don&apos;t address different learning styles, causing children
                   to lose interest.
                 </p>
               </div>
