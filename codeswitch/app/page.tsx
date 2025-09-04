@@ -10,6 +10,10 @@ import {
   BookOpen,
   Award,
   Star,
+  Building2,
+  Palette,
+  TestTube,
+  Leaf,
 } from "lucide-react";
 import CardStack from "../components/CardStack";
 import Image from "next/image";
@@ -206,9 +210,9 @@ export default function STEMLearningLanding() {
                   Limited School Curriculum
                 </div>
                 <p className="text-red-600 dark:text-red-400">
-                  Schools don&apos;t cater to early STEM education, leaving a gap in
-                  your child&apos;s learning journey during crucial developmental
-                  years.
+                  Schools don&apos;t cater to early STEM education, leaving a
+                  gap in your child&apos;s learning journey during crucial
+                  developmental years.
                 </p>
               </div>
               <div className="border border-red-200 dark:border-red-900 bg-red-50 dark:bg-red-900/20 rounded-lg p-4 shadow">
@@ -218,8 +222,8 @@ export default function STEMLearningLanding() {
                 </div>
                 <p className="text-red-600 dark:text-red-400">
                   Existing tuition centers use outdated pen-and-paper methods
-                  that don&apos;t address different learning styles, causing children
-                  to lose interest.
+                  that don&apos;t address different learning styles, causing
+                  children to lose interest.
                 </p>
               </div>
               <div className="border border-red-200 dark:border-red-900 bg-red-50 dark:bg-red-900/20 rounded-lg p-4 shadow">
@@ -314,69 +318,84 @@ export default function STEMLearningLanding() {
           <div className="container mx-auto max-w-7xl px-4 md:px-6">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-gray-900 dark:text-white">
-                Why Choose STEMKids?
+                Why Choose CodeSwitch?
               </h2>
-              <p className="mx-auto max-w-[700px] text-gray-600 dark:text-gray-300 md:text-xl mt-4">
+              <p className="mx-auto max-w-[1000px] text-gray-600 dark:text-gray-300 md:text-xl mt-4">
                 We&apos;re not just another tuition center. We&apos;re building
                 the next generation of innovators.
               </p>
             </div>
             <div className="grid gap-6 lg:grid-cols-2 xl:grid-cols-3">
-              <div className="bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transition-shadow rounded-lg p-4">
-                <div className="mb-2">
-                  <Lightbulb className="h-8 w-8 text-yellow-500" />
+              <div className="bg-white dark:bg-gray-800 shadow-sm hover:shadow-2xl transition-shadow rounded-lg p-4">
+                <div className="flex items-center gap-2 mb-5">
+                  <div>
+                    <Lightbulb className="h-8 w-8 text-yellow-500" />
+                  </div>
+                  <div className="font-bold text-lg text-black">
+                    Junior Robotics
+                  </div>
                 </div>
-                <div className="font-bold text-lg">Junior Robotics</div>
                 <div className="text-gray-600">
                   Introduction to robotics and automation through playful
                   projects and simple programming concepts
                 </div>
               </div>
-              <div className="bg-white shadow-lg hover:shadow-xl transition-shadow rounded-lg p-4">
-                <div className="mb-2">
-                  <span className="text-green-500 text-2xl">🔧</span>
+              <div className="bg-white shadow-sm hover:shadow-2xl transition-shadow rounded-lg p-4">
+                <div className="flex items-center gap-2 mb-5">
+                  <Wrench className="h-8 w-8 text-green-500" />
+                  <div className="font-bold text-lg text-black">
+                    Digital Makers
+                  </div>
                 </div>
-                <div className="font-bold text-lg">Digital Makers</div>
                 <div className="text-gray-600">
                   Learn to create digital projects using kid-friendly
                   programming tools and basic electronics
                 </div>
               </div>
-              <div className="bg-white shadow-lg hover:shadow-xl transition-shadow rounded-lg p-4">
-                <div className="mb-2">
-                  <span className="text-purple-500 text-2xl">🏗️</span>
+              <div className="bg-white shadow-sm hover:shadow-2xl transition-shadow rounded-lg p-4">
+                <div className="flex items-center gap-2 mb-5">
+                  <Building2 className="h-8 w-8 text-purple-500" />
+                  <div className="font-bold text-lg text-black">
+                    Young Engineers
+                  </div>
                 </div>
-                <div className="font-bold text-lg">Young Engineers</div>
+
                 <div className="text-gray-600">
                   Explore fundamental engineering concepts through hands-on
                   building projects and experiments
                 </div>
               </div>
-              <div className="bg-white shadow-lg hover:shadow-xl transition-shadow rounded-lg p-4">
-                <div className="mb-2">
-                  <span className="text-orange-500 text-2xl">🎨</span>
+              <div className="bg-white shadow-sm hover:shadow-2xl transition-shadow rounded-lg p-4">
+                <div className="flex items-center gap-2 mb-5">
+                  <Palette className="h-8 w-8 text-orange-500" />
+                  <div className="font-bold text-lg text-black">
+                    Creative Tech
+                  </div>
                 </div>
-                <div className="font-bold text-lg">Creative Tech</div>
                 <div className="text-gray-600">
                   Combine art and technology to create interactive projects and
                   digital animations
                 </div>
               </div>
-              <div className="bg-white shadow-lg hover:shadow-xl transition-shadow rounded-lg p-4">
-                <div className="mb-2">
-                  <span className="text-red-500 text-2xl">🔬</span>
+              <div className="bg-white shadow-sm hover:shadow-2xl transition-shadow rounded-lg p-4">
+                <div className="flex items-center gap-2 mb-5">
+                  <TestTube className="h-8 w-8 text-red-500" />
+                  <div className="font-bold text-lg text-black">
+                    Science Explorers
+                  </div>
                 </div>
-                <div className="font-bold text-lg">Science Explorers</div>
                 <div className="text-gray-600">
                   Discover the wonders of science through exciting experiments
                   and practical applications
                 </div>
               </div>
-              <div className="bg-white shadow-lg hover:shadow-xl transition-shadow rounded-lg p-4">
-                <div className="mb-2">
-                  <span className="text-teal-500 text-2xl">🌱</span>
+              <div className="bg-white shadow-sm hover:shadow-2xl transition-shadow rounded-lg p-4">
+                <div className="flex items-center gap-2 mb-5">
+                  <Leaf className="h-8 w-8 text-teal-500" />
+                  <div className="font-bold text-lg text-black">
+                    Eco Inventors
+                  </div>
                 </div>
-                <div className="font-bold text-lg">Eco Inventors</div>
                 <div className="text-gray-600">
                   Learn about sustainability and green technology while creating
                   environmentally-friendly projects
@@ -461,9 +480,9 @@ export default function STEMLearningLanding() {
                 <div className="font-bold text-lg text-black">Sarah M.</div>
                 <div className="text-gray-500">Mother of 8-year-old Emma</div>
                 <p className="text-gray-600 mt-2">
-                  &quot;Emma was losing interest in her programming classes,
-                  but STEMKids changed everything. She&apos;s now building
-                  robots and can&apos;t stop talking about engineering!&quot;
+                  &quot;Emma was losing interest in her programming classes, but
+                  CodeSwitch changed everything. She&apos;s now building robots
+                  and can&apos;t stop talking about engineering!&quot;
                 </p>
               </div>
               <div className="bg-white rounded-lg p-4 shadow">
@@ -494,8 +513,8 @@ export default function STEMLearningLanding() {
                 <div className="font-bold text-lg text-black">Michelle T.</div>
                 <div className="text-gray-500">Mother of 7-year-old Ryan</div>
                 <p className="text-gray-600 mt-2">
-                  &quot;Finally, a program that goes beyond screen time! Ryan
-                  is learning real engineering concepts through play. This is
+                  &quot;Finally, a program that goes beyond screen time! Ryan is
+                  learning real engineering concepts through play. This is
                   exactly what I was looking for.&quot;
                 </p>
               </div>
@@ -524,7 +543,7 @@ export default function STEMLearningLanding() {
                   <input
                     type="email"
                     placeholder="Enter your email"
-                    className="max-w-lg flex-1 bg-white/90 border-white/20 px-4 py-2 rounded border"
+                    className="max-w-lg flex-1 bg-white/90 border-white/20 px-4 py-2 rounded border text-black"
                   />
                   <button
                     type="submit"
@@ -553,7 +572,7 @@ export default function STEMLearningLanding() {
       {/* Footer */}
       <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-900">
         <p className="text-xs text-gray-500 dark:text-gray-400">
-          &copy; 2024 STEMKids. All rights reserved. Empowering the next
+          &copy; 2024 CodeSwitch. All rights reserved. Empowering the next
           generation of innovators.
         </p>
         <nav className="sm:ml-auto flex gap-4 sm:gap-6">
