@@ -249,7 +249,7 @@ export default function STEMLearningLanding() {
                     Hands-On Learning That Actually Works
                   </h2>
                   <p className="max-w-[600px] text-gray-600 md:text-xl/relaxed dark:text-gray-200">
-                    We've revolutionized STEM education with custom-made
+                    We&apos;ve revolutionized STEM education with custom-made
                     learning tools and project-based evaluation that gives
                     children full creative control over their learning journey.
                   </p>
@@ -317,8 +317,8 @@ export default function STEMLearningLanding() {
                 Why Choose STEMKids?
               </h2>
               <p className="mx-auto max-w-[700px] text-gray-600 dark:text-gray-300 md:text-xl mt-4">
-                We're not just another tuition center. We're building the next
-                generation of innovators.
+                We&apos;re not just another tuition center. We&apos;re building
+                the next generation of innovators.
               </p>
             </div>
             <div className="grid gap-6 lg:grid-cols-2 xl:grid-cols-3">
@@ -326,64 +326,60 @@ export default function STEMLearningLanding() {
                 <div className="mb-2">
                   <Lightbulb className="h-8 w-8 text-yellow-500" />
                 </div>
-                <div className="font-bold text-lg">
-                  All Engineering Disciplines
-                </div>
+                <div className="font-bold text-lg">Junior Robotics</div>
                 <div className="text-gray-600">
-                  Beyond programming - explore mechanical, electrical, civil,
-                  and more engineering fields
+                  Introduction to robotics and automation through playful
+                  projects and simple programming concepts
                 </div>
               </div>
               <div className="bg-white shadow-lg hover:shadow-xl transition-shadow rounded-lg p-4">
                 <div className="mb-2">
-                  <span className="text-green-500 text-2xl">🎯</span>
+                  <span className="text-green-500 text-2xl">🔧</span>
                 </div>
-                <div className="font-bold text-lg">
-                  Project-Based Evaluation
-                </div>
+                <div className="font-bold text-lg">Digital Makers</div>
                 <div className="text-gray-600">
-                  Unique assessment method that focuses on creativity,
-                  problem-solving, and real-world application
+                  Learn to create digital projects using kid-friendly
+                  programming tools and basic electronics
                 </div>
               </div>
               <div className="bg-white shadow-lg hover:shadow-xl transition-shadow rounded-lg p-4">
                 <div className="mb-2">
-                  <span className="text-purple-500 text-2xl">🧑‍🤝‍🧑</span>
+                  <span className="text-purple-500 text-2xl">🏗️</span>
                 </div>
-                <div className="font-bold text-lg">Personalized Learning</div>
+                <div className="font-bold text-lg">Young Engineers</div>
                 <div className="text-gray-600">
-                  Custom-made tools and approaches that cater to different
-                  learning styles and interests
+                  Explore fundamental engineering concepts through hands-on
+                  building projects and experiments
                 </div>
               </div>
               <div className="bg-white shadow-lg hover:shadow-xl transition-shadow rounded-lg p-4">
                 <div className="mb-2">
-                  <span className="text-orange-500 text-2xl">🚀</span>
+                  <span className="text-orange-500 text-2xl">🎨</span>
                 </div>
-                <div className="font-bold text-lg">Portfolio Building</div>
+                <div className="font-bold text-lg">Creative Tech</div>
                 <div className="text-gray-600">
-                  Help build your child's portfolio with real projects and
-                  achievements for future opportunities
+                  Combine art and technology to create interactive projects and
+                  digital animations
                 </div>
               </div>
               <div className="bg-white shadow-lg hover:shadow-xl transition-shadow rounded-lg p-4">
                 <div className="mb-2">
-                  <span className="text-red-500 text-2xl">🎮</span>
+                  <span className="text-red-500 text-2xl">🔬</span>
                 </div>
-                <div className="font-bold text-lg">Creative Control</div>
+                <div className="font-bold text-lg">Science Explorers</div>
                 <div className="text-gray-600">
-                  Students have full creative control over their projects,
-                  fostering innovation and ownership
+                  Discover the wonders of science through exciting experiments
+                  and practical applications
                 </div>
               </div>
               <div className="bg-white shadow-lg hover:shadow-xl transition-shadow rounded-lg p-4">
                 <div className="mb-2">
-                  <span className="text-teal-500 text-2xl">📚</span>
+                  <span className="text-teal-500 text-2xl">🌱</span>
                 </div>
-                <div className="font-bold text-lg">All-Rounder Education</div>
+                <div className="font-bold text-lg">Eco Inventors</div>
                 <div className="text-gray-600">
-                  Maximum exposure across different fields to help identify your
-                  child's true interests and talents
+                  Learn about sustainability and green technology while creating
+                  environmentally-friendly projects
                 </div>
               </div>
             </div>
@@ -465,9 +461,9 @@ export default function STEMLearningLanding() {
                 <div className="font-bold text-lg text-black">Sarah M.</div>
                 <div className="text-gray-500">Mother of 8-year-old Emma</div>
                 <p className="text-gray-600 mt-2">
-                  "Emma was losing interest in her programming classes, but
-                  STEMKids changed everything. She's now building robots and
-                  can't stop talking about engineering!"
+                  &quot;Emma was losing interest in her programming classes,
+                  but STEMKids changed everything. She&apos;s now building
+                  robots and can&apos;t stop talking about engineering!&quot;
                 </p>
               </div>
               <div className="bg-white rounded-lg p-4 shadow">
@@ -481,9 +477,10 @@ export default function STEMLearningLanding() {
                 <div className="font-bold text-lg text-black">David L.</div>
                 <div className="text-gray-500">Father of 9-year-old Alex</div>
                 <p className="text-gray-600 mt-2">
-                  "The hands-on approach is incredible. Alex built a working
-                  bridge last month and explained the engineering principles to
-                  me. I'm amazed at what he's learning!"
+                  &quot;The hands-on approach is incredible. Alex built a
+                  working bridge last month and explained the engineering
+                  principles to me. I&apos;m amazed at what he&apos;s
+                  learning!&quot;
                 </p>
               </div>
               <div className="bg-white rounded-lg p-4 shadow">
@@ -497,9 +494,9 @@ export default function STEMLearningLanding() {
                 <div className="font-bold text-lg text-black">Michelle T.</div>
                 <div className="text-gray-500">Mother of 7-year-old Ryan</div>
                 <p className="text-gray-600 mt-2">
-                  "Finally, a program that goes beyond screen time! Ryan is
-                  learning real engineering concepts through play. This is
-                  exactly what I was looking for."
+                  &quot;Finally, a program that goes beyond screen time! Ryan
+                  is learning real engineering concepts through play. This is
+                  exactly what I was looking for.&quot;
                 </p>
               </div>
             </div>
@@ -518,8 +515,8 @@ export default function STEMLearningLanding() {
                   Ready to Give Your Child a STEM Head Start?
                 </h2>
                 <p className="mx-auto max-w-[600px] text-orange-100 md:text-xl">
-                  Join hundreds of parents who've chosen hands-on learning over
-                  traditional methods. Book a free trial class today!
+                  Join hundreds of parents who&apos;ve chosen hands-on learning
+                  over traditional methods. Book a free trial class today!
                 </p>
               </div>
               <div className="w-full max-w-sm space-y-2">
@@ -556,8 +553,8 @@ export default function STEMLearningLanding() {
       {/* Footer */}
       <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-900">
         <p className="text-xs text-gray-500 dark:text-gray-400">
-          © 2024 STEMKids. All rights reserved. Empowering the next generation
-          of innovators.
+          &copy; 2024 STEMKids. All rights reserved. Empowering the next
+          generation of innovators.
         </p>
         <nav className="sm:ml-auto flex gap-4 sm:gap-6">
           <Link

@@ -44,7 +44,18 @@ const cards: CardProps[] = [
 
 export default function CardStack() {
   const containerRef = useRef<HTMLDivElement>(null);
-  const [activeIndex, setActiveIndex] = useState(-1);
+  const [activeIndex, setActiveIndex] = useState(() => {
+    if (typeof window === "undefined") return -3;
+    const viewHeight = window.innerHeight;
+    const scrollTop = window.scrollY;
+    const scrollHeight = document.documentElement.scrollHeight;
+    const progress = Math.max(
+      0,
+      Math.min(1, scrollTop / (scrollHeight - viewHeight))
+    );
+    const cardIndex = Math.floor(progress * cards.length);
+    return Math.max(-1, Math.min(cardIndex, cards.length - 1));
+  });
 
   useEffect(() => {
     const handleScroll = () => {
@@ -79,16 +90,16 @@ export default function CardStack() {
             className={`absolute w-[350px] h-[350px] rounded-[25px] p-8 flex flex-col justify-between transition-all duration-500 ease-in-out ${card.color} bg-opacity-90 backdrop-blur-sm shadow-xl`}
             style={{
               top: "50%",
-              left: "50%",
+              left: "80%",
               transform:
                 index < activeIndex
-                  ? `translate(-50%, -50%) translateY(-120vh) rotate(-48deg)`
+                  ? `translate(-50%, -50%) translateY(-120vh) rotate(45deg)`
                   : `translate(-50%, -50%) rotate(${
-                      Math.max(0, index - Math.max(0, activeIndex)) * -10
+                      Math.max(0, index - Math.max(0, activeIndex)) * 10
                     }deg)`,
               opacity: index < activeIndex ? 0 : 1,
-              zIndex: cards.length - index,
-              transformOrigin: "bottom left",
+              zIndex: cards.length - Math.abs(index - activeIndex),
+              transformOrigin: "center",
             }}
           >
             <div className="font-bold text-xl text-white/90">{card.sub}</div>
